@@ -3,10 +3,9 @@ SELECT g.genre_name, count(mg.musicianid) FROM genre g
 	GROUP BY g.genre_name;
 
 
-SELECT a.title, a.release_year, count(mt.trackid) FROM album a
+SELECT count(mt.trackid) FROM album a
 	JOIN music_track mt ON a.albumid = mt.albumid
-	WHERE a.release_year BETWEEN 2019 AND 2020
-	GROUP BY a.title, a.release_year;
+	WHERE a.release_year BETWEEN 2019 AND 2020;
 
 
 SELECT a.title, avg(mt.duratiON) FROM album a
@@ -15,9 +14,12 @@ SELECT a.title, avg(mt.duratiON) FROM album a
 
 
 SELECT m.stage_name FROM musician m
+	WHERE m.stage_name NOT IN
+	(SELECT DISTINCT m.stage_name FROM musician m
 	JOIN musician_album ma ON m.musicianid = ma.musicianid
 	JOIN album a ON a.albumid = ma.albumid
-	WHERE a.release_year != 2020;
+	WHERE a.release_year = 2020)
+	ORDER BY m.stage_name;
 
 
 SELECT c.title FROM collectiON c

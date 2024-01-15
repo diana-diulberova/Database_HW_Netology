@@ -23,4 +23,4 @@ SELECT stage_name
 
 SELECT name
 	FROM music_track
-	WHERE name LIKE '%%My%%';
+	WHERE name iLIKE '%my%';

@@ -22,7 +22,7 @@ INSERT INTO music_track(name, duration, albumid)
 
 
 INSERT INTO collection(title, release_year)
-	VALUES ('Brutality', 1995), ('Credulous', 1999), ('Bomb-proof', 1988), ('Frontier', 1975), ('Frenzy', 2021), ('Codger', 1998), ('Clack', 2006), ('Climber', 2008), ('Foolhardiness', 2019), ('Elfin', 2021)
+	VALUES ('Brutality', 1995), ('Credulous', 1999), ('Bomb-proof', 1988), ('Frontier', 1975), ('Frenzy', 2021), ('Codger', 1998), ('Clack', 2006), ('Climber', 2008), ('Foolhardiness', 2019), ('Elfin', 2021);
 
 
 INSERT INTO collection_track(collectionid, trackid)
@@ -40,6 +40,3 @@ INSERT INTO music_track(name, duration, albumid)
 INSERT INTO album(title, release_year)
 	VALUES ('Bear', 2003);
 
-
-INSERT INTO music_track(name, duration, albumid)
-	VALUES ('Eclipse', 367, 21);
