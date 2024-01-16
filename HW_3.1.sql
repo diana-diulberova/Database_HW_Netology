@@ -40,3 +40,6 @@ INSERT INTO music_track(name, duration, albumid)
 INSERT INTO album(title, release_year)
 	VALUES ('Bear', 2003);
 
+
+INSERT INTO music_track(name, duration, albumid)
+	VALUES ('my own', 302, 6), ('own my', 282, 10), ('my', 428, 9), ('oh my god', 419, 1), ('myself', 323, 7), ('by myself', 489, 4), ('bemy self', 302, 6), ('myself by', 282, 10), ('by myself by', 428, 9), ('beemy', 419, 1), ('premyne', 323, 7);
